@@ -1,0 +1,89 @@
+:root {
+  --main-text-color: #555;
+  --main-bg-color: #fff;
+  --accent-color: #ff523b;
+  --hover-color: #563434;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+.rows {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:10px;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.col-2 h2 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--accent-color);
+  color: var(--main-bg-color);
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 5px;
+  transition: background 0.5s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+  color: var(--main-bg-color);
+}
+
+select {
+  border: 1px solid var(--accent-color);
+  padding: 5px;
+  margin-top: 20px;
+}
+
+select:focus {
+  outline: none;
+}
+
+input[type="number"] {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid var(--accent-color);
+}
+
+input[type="number"]:focus {
+  outline: none;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: var(--main-text-color);
+}
